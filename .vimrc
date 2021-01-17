@@ -55,12 +55,11 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 " Enables syntax highlighting
 syntax on
 
-set termguicolors
 colorscheme darcula
 
 "This will cause all splits to happen below (including terminal)
 set splitbelow
-set termwinsize=20x0
+set termwinsize=10x0
 
 "---- CtrlP config ----
 let g:ctrlp_map = '<c-p>'
