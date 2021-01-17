@@ -16,6 +16,14 @@ Plugin 'easymotion/vim-easymotion'
 
 Plugin 'kien/ctrlp.vim'
 
+Plugin 'prabirshrestha/vim-lsp'
+
+Plugin 'mattn/vim-lsp-settings'
+
+Plugin 'prabirshrestha/asyncomplete.vim'
+
+Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -37,6 +45,9 @@ set ignorecase
 set nocompatible
 set nowrap
 set number
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " Ignore directories
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
@@ -49,7 +60,7 @@ colorscheme darcula
 
 "This will cause all splits to happen below (including terminal)
 set splitbelow
-set termwinsize=10x0
+set termwinsize=20x0
 
 "---- CtrlP config ----
 let g:ctrlp_map = '<c-p>'
