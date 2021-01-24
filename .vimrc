@@ -28,8 +28,6 @@ Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'vim-syntastic/syntastic'
-
 "Git integration
 Plugin 'tpope/vim-fugitive'
 
@@ -100,15 +98,6 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
-
-"---- Syntastic configuration -----
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
 
 "---- NERDTree Configuration -----
 let NERDTreeShowHidden=1
